@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <label class="title">calculation of the icosahedron volume </label><br>
+    <input class="input" type="text" name="a" id="a" placeholder="edge length"><br>
+    <button class="button" onclick="findVolume(document.getElementById('a').value)">calculate</button><br>
+</div>
+
+<script>
+    function findVolume(a) {
+        let volume;
+        volume = (5 / 12) * (3 + Math.sqrt(5)) * a * a * a;
+        alert("Volume: "+volume.toFixed(3))
+    }
+</script>
+</body>
+</html>
