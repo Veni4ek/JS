@@ -9,13 +9,15 @@
     <label class="title">calculation of the icosahedron volume </label><br>
     <input class="input" type="text" name="a" id="a" placeholder="edge length"><br>
     <button class="button" onclick="findVolume(document.getElementById('a').value)">calculate</button><br>
+    <p id="tag"></p>
 </div>
 
 <script>
     function findVolume(a) {
-        let volume;
+        let volume, result;
         volume = (5 / 12) * (3 + Math.sqrt(5)) * a * a * a;
-        alert("Volume: "+volume.toFixed(3))
+        result = "Volume: "+volume.toFixed(3);
+        document.getElementById("tag").innerHTML = result;
     }
 </script>
 </body>
