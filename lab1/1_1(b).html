@@ -4,15 +4,16 @@
 <label>Some Text </label><br>
 <input type= text id="some_text" onchange="display_text()"><br>
 
-
 <script>
     function display_text() {
-        document.getElementById("tag").innerHTML =
-            document.getElementById("some_text").value;
+        let a = "Привет, ";
+        let h = document.getElementById("some_text").value;
+        let j = a + h + "!";
+        document.getElementById("tag").innerHTML = j;
+        
     }
 
 </script>
-
 
 <p id="tag"></p>
 
