@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>task 1 (b)</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="text-field">
+            <select id="week"class="select-css">
+                <option disabled selected>День недели</option>
+                <option value="value1">Понедельник</option>
+                <option value="value2">Вторник</option>
+                <option value="value3">Среда</option>
+                <option value="value4">Четверг</option>
+                <option value="value5">Пятница</option>
+                <option value="value6">Суббота</option>
+                <option value="value7">Воскресенье</option>
+              </select>
+            <select id="temp" class="select-css">
+                <option disabled selected>Температура</option>
+                <option value="value1">Жарко</option>
+                <option value="value2">Тепло</option>
+                <option value="value3">Холодно</option>
+              </select>
+              <select id="precipitation" class="select-css"> 
+                <option disabled selected>Осадки</option>
+                <option value="value1">Ясно</option>
+                <option value="value2">Облачно</option>
+                <option value="value3">Дождь</option>
+                <option value="value4">Снег</option>
+                <option value="value5">Град</option>
+              </select>
+              <select id="wind" class="select-css">
+                <option disabled selected>Ветер</option>
+                <option value="value1">Есть</option>
+                <option value="value2">Нет</option>
+              </select>
+              <select id="humidity" class="select-css">
+                <option disabled selected>Влажность</option>
+                <option value="value1">Высокая</option>
+                <option value="value2">Низкая</option>
+              </select>
+              <button id="button" onclick="check()">Submit</button>
+            <p id="result"></p>  
+          </div>
+          <script src="script.js"></script>
+    </body>
+</html>
+
